@@ -31,7 +31,7 @@ public class Affine
             if (cipher.charAt(i) != ' ')
             {
                 msg = msg + (char) (((a_inv *
-                        ((cipher.charAt(i) + 'A' - b)) % 26)) + 'A');
+                        ((cipher.charAt(i) + 'A' - b+26)) % 26)) + 'A');
             }
             else //else simply append space character
             {
